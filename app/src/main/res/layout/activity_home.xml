@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hot_pink"
+    tools:context=".HomeActivity">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Rana Gee"
+    android:textSize="70dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:fontFamily="monospace" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rana Tousef Anjum"
+        android:fontFamily="monospace"
+        android:textSize="30dp"
+        android:layout_marginTop="550dp"
+        android:textColor="@color/white"
+        android:gravity="center" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt"
+                android:fontFamily="monospace"
+                android:text="Rana Touseef Anjum"
+                android:background="@drawable/heading"
+                style="@style/text" />
+
+            <EditText
+                android:id="@+id/no1"
+                android:paddingLeft="20dp"
+                android:background="@drawable/edittext"
+                style="@style/edittext"
+                android:layout_below="@+id/txt"
+                android:hint="Enter 1st Number"/>
+
+            <EditText
+                android:paddingLeft="20dp"
+                android:id="@+id/no2"
+                android:background="@drawable/edittext"
+                style="@style/edittext"
+                android:layout_below="@+id/no1"
+                android:hint="Enter 2nd Number"/>
+            <TextView
+                android:id="@+id/res"
+                style="@style/text2"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/edittext"
+                android:layout_below="@+id/no2"
+                android:hint="Result"
+                android:text=""
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btn1"
+                android:layout_below="@+id/res"
+                android:text="Divide"
+                android:fontFamily="monospace"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                style="@style/button" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:fontFamily="monospace"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                android:layout_below="@+id/btn1"
+                android:text="Addition"
+                style="@style/button" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:fontFamily="monospace"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                android:text="Subtraction"
+                android:layout_below="@+id/btn2"
+                style="@style/button" />
+            <Button
+                android:id="@+id/btn4"
+                android:fontFamily="monospace"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                android:text="Multiplication"
+                android:layout_below="@+id/btn3"
+                style="@style/button" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
